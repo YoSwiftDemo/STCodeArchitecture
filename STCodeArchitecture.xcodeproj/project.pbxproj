@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0D77A34AE24B6786C29094 /* libPods-STCodeArchitecture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CF64F6D0805A6A9EC7F483 /* libPods-STCodeArchitecture.a */; };
 		9E814C961E7466B20048DB80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E814C951E7466B20048DB80 /* main.m */; };
 		9E814C991E7466B20048DB80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E814C981E7466B20048DB80 /* AppDelegate.m */; };
 		9E814C9C1E7466B20048DB80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E814C9B1E7466B20048DB80 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51BC6D8393A915B58D8DE165 /* Pods-STCodeArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCodeArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-STCodeArchitecture/Pods-STCodeArchitecture.release.xcconfig"; sourceTree = "<group>"; };
+		9A2583E627D8585AA8A94502 /* Pods-STCodeArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCodeArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STCodeArchitecture/Pods-STCodeArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		9E814C911E7466B20048DB80 /* STCodeArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCodeArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E814C951E7466B20048DB80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E814C971E7466B20048DB80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		9E814CB51E7466B30048DB80 /* STCodeArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STCodeArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E814CB91E7466B30048DB80 /* STCodeArchitectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STCodeArchitectureUITests.m; sourceTree = "<group>"; };
 		9E814CBB1E7466B30048DB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CF64F6D0805A6A9EC7F483 /* libPods-STCodeArchitecture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STCodeArchitecture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0D77A34AE24B6786C29094 /* libPods-STCodeArchitecture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F483148A36660B6D8B2325E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF64F6D0805A6A9EC7F483 /* libPods-STCodeArchitecture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E814C881E7466B20048DB80 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				9E814CAD1E7466B30048DB80 /* STCodeArchitectureTests */,
 				9E814CB81E7466B30048DB80 /* STCodeArchitectureUITests */,
 				9E814C921E7466B20048DB80 /* Products */,
+				A0D88853537C00D87CA9998C /* Pods */,
+				4F483148A36660B6D8B2325E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = STCodeArchitectureUITests;
 			sourceTree = "<group>";
 		};
+		A0D88853537C00D87CA9998C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A2583E627D8585AA8A94502 /* Pods-STCodeArchitecture.debug.xcconfig */,
+				51BC6D8393A915B58D8DE165 /* Pods-STCodeArchitecture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E814CBE1E7466B30048DB80 /* Build configuration list for PBXNativeTarget "STCodeArchitecture" */;
 			buildPhases = (
+				8AB3C2D94A1E7264D7B74C08 /* [CP] Check Pods Manifest.lock */,
 				9E814C8D1E7466B20048DB80 /* Sources */,
 				9E814C8E1E7466B20048DB80 /* Frameworks */,
 				9E814C8F1E7466B20048DB80 /* Resources */,
+				6D415AD83C461EA4BDEAC917 /* [CP] Embed Pods Frameworks */,
+				1283A720926430D61AA50B61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1283A720926430D61AA50B61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STCodeArchitecture/Pods-STCodeArchitecture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D415AD83C461EA4BDEAC917 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STCodeArchitecture/Pods-STCodeArchitecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB3C2D94A1E7264D7B74C08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E814C8D1E7466B20048DB80 /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		9E814CBF1E7466B30048DB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2583E627D8585AA8A94502 /* Pods-STCodeArchitecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
@@ -435,6 +511,7 @@
 		};
 		9E814CC01E7466B30048DB80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BC6D8393A915B58D8DE165 /* Pods-STCodeArchitecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
